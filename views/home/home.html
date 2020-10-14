@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Todo App</title>
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link href="./home.css" rel="stylesheet">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';"/>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center my-4">Electron Todo App</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="todolist not-done">
+                    <h2 class="mb-2">Tâches</h2>
+                    <form class="d-flex">
+                        <input type="text" placeholder="Nouvelle tâche" class="form-control mr-1">
+                        <button type="submit" class="btn btn-success">Ajouter</button>
+                    </form>
+                    <hr>
+                    <ul class="list-unstyled">
+                        <li class="ui-state-default">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" /> Tâche 1 <button class="btn btn-primary btn-sm ml-2">Modifier</button>
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="todo-footer">
+                        <strong><span class="count-todos"></span></strong> Tâches restantes
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="todolist">
+                    <h2 class="mb-2">Tâches effectuées</h2>
+                       <ul id="done-items" class="list-unstyled">
+                           <li>Tâche 2 <button class="btn btn-danger btn-sm ml-2">Supprimer</button></li>
+                       </ul>
+                   </div>
+            </div>
+        </div>
+            
+        <script src="./home.js"></script>
+    </div>
+</body>
+</html>
