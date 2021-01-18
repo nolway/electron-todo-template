@@ -13,39 +13,44 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="text-center my-4">Electron Todo App</h1>
+                <h1 class="text-center mt-4 mb-5">Electron Todo App</h1>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
-                <div class="todolist not-done">
-                    <h2 class="mb-2">Tâches</h2>
-                    <form class="d-flex">
-                        <input type="text" placeholder="Nouvelle tâche" class="form-control mr-1">
-                        <button type="submit" class="btn btn-success">Ajouter</button>
-                    </form>
-                    <hr>
-                    <ul class="list-unstyled">
-                        <li class="ui-state-default">
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox" value="" /> Tâche 1 <button class="btn btn-primary btn-sm ml-2">Modifier</button>
-                                </label>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="todo-footer">
-                        <strong><span class="count-todos"></span></strong> Tâches restantes
-                    </div>
+            <div class="col-md-5">
+                <h2 class="mb-2">Tâches</h2>
+                <div class="d-flex">
+                    <input id="new-task" type="text" class="form-control mr-1">
+                    <button type="submit" class="btn btn-success">Ajouter</button>
                 </div>
+                <hr>
+                <ul class="list-unstyled" id="list-unstyled">
+                    <li class="d-flex mb-4">
+                        <input class="mt-11" type="checkbox">
+                        <input type="text" value="Faire le ménage" class="form-control mr-1 ml-2">
+                        <button class="btn btn-primary btn-sm ml-2 edit">Modifier</button>
+                        <button class="btn btn-danger btn-sm ml-2 delete">Supprimer</button>
+                    </li>
+                    <li class="editMode d-flex mb-4">
+                        <input class="mt-11" type="checkbox">
+                        <input type="text" value="Go Shopping" class="form-control mr-1 ml-2">
+                        <button class="btn btn-primary btn-sm ml-2 edit">Modifier</button>
+                        <button class="btn btn-danger btn-sm ml-2 delete">Supprimer</button>
+                    </li>
+                </ul>
             </div>
-            <div class="col-md-6">
-                <div class="todolist">
-                    <h2 class="mb-2">Tâches effectuées</h2>
-                       <ul id="done-items" class="list-unstyled">
-                           <li>Tâche 2 <button class="btn btn-danger btn-sm ml-2">Supprimer</button></li>
-                       </ul>
-                   </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <h3>Tâches effectuées</h3>
+                <ul id="completed-tasks">
+                    <li class="d-flex  mb-4">
+                        <input class="mt-11" type="checkbox" checked>
+                        <!-- <label>See the Doctor</label> -->
+                        <input value="See the Doctor" type="text" class="form-control mr-1 ml-2">
+                        <button class="btn btn-primary btn-sm ml-2 edit">Modifier</button>
+                        <button class="btn btn-danger btn-sm ml-2 delete">Supprimer</button>
+                    </li>
+                </ul>
             </div>
         </div>
             

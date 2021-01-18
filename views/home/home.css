@@ -29,3 +29,7 @@ li.ui-state-default:last-child {
 #done-items li:last-child {
     border-bottom: none;
 }
+
+.mt-11 {
+    margin-top: 11px;
+}

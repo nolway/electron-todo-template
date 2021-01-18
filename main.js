@@ -9,9 +9,6 @@ function createWindow() {
         frame: false,
         show: false,
         transparent: true,
-        closable: false,
-        resizable: false,
-        movable: false,
         webPreferences: {
             nodeIntegration: true
         }
