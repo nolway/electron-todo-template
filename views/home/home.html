@@ -21,11 +21,11 @@
             <div class="col-md-5">
                 <h2 class="mb-2">Tâches</h2>
                 <div class="d-flex">
-                    <input id="new-task" type="text" class="form-control mr-1">
+                    <input id="newTask" type="text" class="form-control mr-1">
                     <button type="submit" class="btn btn-success">Ajouter</button>
                 </div>
                 <hr>
-                <ul class="list-unstyled" id="list-unstyled">
+                <ul class="list-unstyled">
                     <li class="d-flex mb-4">
                         <input class="mt-11" type="checkbox">
                         <input type="text" value="Faire le ménage" class="form-control mr-1 ml-2">
@@ -34,7 +34,7 @@
                     </li>
                     <li class="editMode d-flex mb-4">
                         <input class="mt-11" type="checkbox">
-                        <input type="text" value="Go Shopping" class="form-control mr-1 ml-2">
+                        <input type="text" value="Passer l'aspirateur" class="form-control mr-1 ml-2">
                         <button class="btn btn-primary btn-sm ml-2 edit">Modifier</button>
                         <button class="btn btn-danger btn-sm ml-2 delete">Supprimer</button>
                     </li>
@@ -43,18 +43,16 @@
             <div class="col-md-1"></div>
             <div class="col-md-5">
                 <h3>Tâches effectuées</h3>
-                <ul id="completed-tasks">
+                <ul id="completedTasks">
                     <li class="d-flex  mb-4">
                         <input class="mt-11" type="checkbox" checked>
-                        <!-- <label>See the Doctor</label> -->
-                        <input value="See the Doctor" type="text" class="form-control mr-1 ml-2">
+                        <input value="Faire la vaisselle" type="text" class="form-control mr-1 ml-2">
                         <button class="btn btn-primary btn-sm ml-2 edit">Modifier</button>
                         <button class="btn btn-danger btn-sm ml-2 delete">Supprimer</button>
                     </li>
                 </ul>
             </div>
         </div>
-            
         <script src="./home.js"></script>
     </div>
 </body>
