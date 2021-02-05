@@ -1,12 +1,12 @@
 {
   "name": "todo-app-electron",
   "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
+  "description": "Electron App",
+  "main": "src/main.js",
   "scripts": {
     "start": "electron ."
   },
-  "author": "",
+  "author": "LE Christophe, VASSEUR Baptiste, FAIZAU alexis, ISKRANE Kamel",
   "license": "ISC",
   "devDependencies": {
     "electron": "^10.1.3"
